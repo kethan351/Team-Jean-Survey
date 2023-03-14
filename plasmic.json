@@ -1,0 +1,128 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "inlined",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "6iUmegkaYL2YC3xpDCZxPo",
+      "projectApiToken": "BIHV1Ys3mMocrwfn2AxyIaet9hXKlHOxL4AVgheamYZT4vVAkIcGgY5lpwFbj7WEsRSoJUpt1qztOeBDaRtWQ",
+      "projectName": "JEAN-SURVEY",
+      "version": "latest",
+      "cssFilePath": "plasmic/jean_survey/plasmic_jean_survey.module.css",
+      "components": [
+        {
+          "id": "Vq261hz3ls9h",
+          "name": "TodoApp",
+          "type": "managed",
+          "projectId": "6iUmegkaYL2YC3xpDCZxPo",
+          "renderModuleFilePath": "plasmic/jean_survey/PlasmicTodoApp.jsx",
+          "importSpec": {
+            "modulePath": "TodoApp.jsx"
+          },
+          "cssFilePath": "plasmic/jean_survey/PlasmicTodoApp.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "BqmWDb3vAFkU",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "6iUmegkaYL2YC3xpDCZxPo",
+          "renderModuleFilePath": "plasmic/jean_survey/PlasmicHeader.jsx",
+          "importSpec": {
+            "modulePath": "Header.jsx"
+          },
+          "cssFilePath": "plasmic/jean_survey/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "FnQhaLCcuZWV",
+          "name": "Task",
+          "type": "managed",
+          "projectId": "6iUmegkaYL2YC3xpDCZxPo",
+          "renderModuleFilePath": "plasmic/jean_survey/PlasmicTask.jsx",
+          "importSpec": {
+            "modulePath": "Task.jsx"
+          },
+          "cssFilePath": "plasmic/jean_survey/PlasmicTask.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "CUumFuecyhAY",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "6iUmegkaYL2YC3xpDCZxPo",
+          "renderModuleFilePath": "plasmic/jean_survey/PlasmicFooter.jsx",
+          "importSpec": {
+            "modulePath": "Footer.jsx"
+          },
+          "cssFilePath": "plasmic/jean_survey/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Wx_J__SOvCCd",
+          "name": "ToggleButton",
+          "type": "managed",
+          "projectId": "6iUmegkaYL2YC3xpDCZxPo",
+          "renderModuleFilePath": "plasmic/jean_survey/PlasmicToggleButton.jsx",
+          "importSpec": {
+            "modulePath": "ToggleButton.jsx"
+          },
+          "cssFilePath": "plasmic/jean_survey/PlasmicToggleButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [],
+      "images": [],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "yHlvo0ZBBFLT",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "OE10djIPCcgZ",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "5OJ-dGnGGka6",
+        "name": "Theme",
+        "projectId": "6iUmegkaYL2YC3xpDCZxPo",
+        "contextFilePath": "plasmic/jean_survey/PlasmicGlobalVariant__Theme.jsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.222",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.222/dist/plasmic.schema.json"
+}
