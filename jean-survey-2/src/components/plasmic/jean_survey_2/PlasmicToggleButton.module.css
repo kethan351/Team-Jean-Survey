@@ -1,0 +1,22 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3px;
+  padding: 3px 7px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.rootstate_selected {
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid rgba(175, 47, 47, 0.2);
+}
+.root:hover {
+  border-radius: 3px;
+  border: 1px solid var(--token-ZjudxK1YTSN7);
+}
+.slotTargetChildren {
+  color: var(--token-k9hb051Qv-H0);
+}
