@@ -1,0 +1,217 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "9An8zqKqHunPYYo4cu2raH",
+      "projectApiToken": "6nX2lZ94JKp9L9zkziL20J3Kb6mVQhKUUu23AJKkRp6C4nj160ax6crMd5sdNz84VxMwTAqxKCiHBDVTkTpHLA",
+      "projectName": "jean-survey-2",
+      "version": "latest",
+      "cssFilePath": "plasmic/jean_survey_2/plasmic_jean_survey_2.module.css",
+      "components": [
+        {
+          "id": "m3dFsaanQg1o",
+          "name": "TodoApp",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicTodoApp.tsx",
+          "importSpec": {
+            "modulePath": "TodoApp.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicTodoApp.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "7AS_v3mllVy9",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicHeader.tsx",
+          "importSpec": {
+            "modulePath": "Header.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "0RXpCpGOOAec",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "_2Xum1BZtJR4",
+          "name": "ToggleButton",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicToggleButton.tsx",
+          "importSpec": {
+            "modulePath": "ToggleButton.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicToggleButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "3iJDl4ivTUAA",
+          "name": "MultipleChoice",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicMultipleChoice.tsx",
+          "importSpec": {
+            "modulePath": "MultipleChoice.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicMultipleChoice.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "SwkFEueqEZ5",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "oWqYNAhSlk",
+          "name": "ShortAnswer",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicShortAnswer.tsx",
+          "importSpec": {
+            "modulePath": "ShortAnswer.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicShortAnswer.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "RXlRRbGyjc5",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "9rfm_ZacEO",
+          "name": "Tab",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicTab.tsx",
+          "importSpec": {
+            "modulePath": "Tab.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicTab.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "MINeB5eUWi",
+          "name": "Content",
+          "type": "managed",
+          "projectId": "9An8zqKqHunPYYo4cu2raH",
+          "renderModuleFilePath": "plasmic/jean_survey_2/PlasmicContent.tsx",
+          "importSpec": {
+            "modulePath": "Content.tsx"
+          },
+          "cssFilePath": "plasmic/jean_survey_2/PlasmicContent.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "14bXXZYT-it",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/jean_survey_2/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "TkrW8X0T1WG",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/jean_survey_2/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "CwzDQHwdyWv",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/jean_survey_2/icons/PlasmicIcon__Searchsvg.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "lMeKblmuJ7w",
+          "name": "image",
+          "filePath": "plasmic/jean_survey_2/images/image.svg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "_aLkyTOVwxf6",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "F1OXRpWhpXlA",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "UV276DGguN-J",
+        "name": "Theme",
+        "projectId": "9An8zqKqHunPYYo4cu2raH",
+        "contextFilePath": "plasmic/jean_survey_2/PlasmicGlobalVariant__Theme.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.242",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.242/dist/plasmic.schema.json"
+}

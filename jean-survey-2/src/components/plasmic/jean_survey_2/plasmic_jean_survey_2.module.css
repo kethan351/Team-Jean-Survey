@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C700%3B0%2C900%3B1%2C400%3B1%2C500%3B1%2C700%3B1%2C900&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C700%3B0%2C900%3B1%2C400%3B1%2C500%3B1%2C700%3B1%2C900&family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
 
 .plasmic_tokens {
   --token-g4lbA8rZuAgT: rgba(175, 47, 47, 0.15);
@@ -13,7 +13,7 @@
   --plasmic-token-input-placeholder: var(--token-ZjudxK1YTSN7);
   --token-k9hb051Qv-H0: rgb(119, 119, 119);
   --plasmic-token-footer-text: var(--token-k9hb051Qv-H0);
-  --token-xUmLPxmW_jbT: rgb(34, 34, 34);
+  --token-xUmLPxmW_jbT: var(--token-DpFxpXk2gSZS);
   --plasmic-token-app-bg-dark: var(--token-xUmLPxmW_jbT);
   --token-DHWjm7hhEEqd: rgb(0, 0, 0);
   --plasmic-token-page-bg-dark: var(--token-DHWjm7hhEEqd);
@@ -168,7 +168,7 @@
 
 .plasmic_mixins,
 .plasmic_mixins:where(.global_theme_dark) {
-  --mixin-PTqd-FJxwDjC_box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  --mixin-PTqd-FJxwDjC_box-shadow: 0px 2px 4px 0px #00000033;
   --plasmic-mixin-card-shadow_box-shadow: var(--mixin-PTqd-FJxwDjC_box-shadow);
   --mixin-gw2vf830anj0_box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
   --plasmic-mixin-app-shadow_box-shadow: var(--mixin-gw2vf830anj0_box-shadow);

@@ -1,0 +1,19 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 158px;
+  padding-right: 245px;
+  font-size: 20px;
+  padding-left: 0px;
+  padding-bottom: 11px;
+  margin-right: 0px;
+  min-width: 0;
+}

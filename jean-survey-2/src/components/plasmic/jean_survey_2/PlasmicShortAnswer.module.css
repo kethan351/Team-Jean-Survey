@@ -1,0 +1,8 @@
+.saContainer {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-right: 0px;
+}

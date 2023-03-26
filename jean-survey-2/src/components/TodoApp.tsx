@@ -17,7 +17,7 @@ function TodoApp(props: TodoAppProps, ref: HTMLElementRefOf<'div'>) {
       root={{ ref }}
       {...props}
       tasksContainer={{
-        children: entries.map((entry) => <Task entry={entry} />)
+        children: entries.map((entry) => <Task entry={entry} onDelete={() => setEntries(entries.filter((e) => e.id !== entry.id))}/>)
       }}
     />
   );

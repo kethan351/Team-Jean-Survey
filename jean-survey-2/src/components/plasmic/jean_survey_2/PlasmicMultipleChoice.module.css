@@ -1,0 +1,130 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid var(--token-moCfYSt3aqDf);
+}
+.rootglobal_theme_dark {
+  border-bottom-color: var(--token-DpFxpXk2gSZS);
+}
+.freeBox {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  width: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  border-radius: 3px;
+  border-width: 2px;
+}
+.freeBoxstate_editing {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+.textInput__wtaaP {
+  display: flex;
+}
+.textInputstate_editing__wtaaP6USF {
+  font-size: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0);
+  display: none;
+  border-color: var(--token-k9hb051Qv-H0);
+}
+.textInputstate_editing_global_theme_dark__wtaaP6USFLCthO {
+  box-shadow: inset 0px 0px 4px 2px rgba(235, 245, 16, 0.46);
+  color: var(--token-pol3Weg8dREa);
+}
+.rootstate_editing .textInputstate_editing__wtaaP6USF::placeholder {
+  color: var(--token-R7WqfzjKD1VI);
+}
+.rootstate_editing_global_theme_dark
+  .textInputstate_editing_global_theme_dark__wtaaP6USFLCthO::placeholder {
+  color: var(--token-jo6vxHwVu5vv);
+  font-style: italic;
+}
+.textbox {
+  display: flex;
+  width: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0);
+  padding: 15px;
+  border-width: 0px;
+}
+.textboxglobal_theme_dark {
+  color: var(--token-pol3Weg8dREa);
+}
+.textboxstate_editing {
+  padding-right: 0px;
+  max-width: 368px;
+  width: 100%;
+  min-width: 0;
+}
+.root .textbox::placeholder {
+  font-style: italic;
+  color: var(--token-ZjudxK1YTSN7);
+}
+.rootglobal_theme_dark .textboxglobal_theme_dark::placeholder {
+  color: var(--token-jo6vxHwVu5vv);
+}
+.textInput__mnj1D:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  display: none;
+}
+.textInputstate_editing__mnj1D6USF:global(.__wab_instance) {
+  display: none;
+}
+.svg__cFqZu {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__bcJPt {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.deleteBtn {
+  position: relative;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1;
+  opacity: 0;
+  color: #535353;
+}
+.root:hover .deleteBtn {
+  opacity: 0.5;
+  cursor: pointer;
+  border-width: 0px;
+}
+.button {
+  position: relative;
+  display: none;
+}
+.buttonstate_editing {
+  display: block;
+}

@@ -1,0 +1,144 @@
+{
+  "projects": [
+    {
+      "projectId": "9An8zqKqHunPYYo4cu2raH",
+      "version": "latest",
+      "dependencies": {},
+      "lang": "ts",
+      "fileLocks": [
+        {
+          "type": "globalVariant",
+          "assetId": "UV276DGguN-J",
+          "checksum": "e19ba5ec6e890381ec213cd35af13034"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "m3dFsaanQg1o",
+          "checksum": "d9546d79e279456777f56dfbb9208f1c"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "m3dFsaanQg1o",
+          "checksum": "d9546d79e279456777f56dfbb9208f1c"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "7AS_v3mllVy9",
+          "checksum": "8ed99643f59e4b2d2947397df9327246"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "7AS_v3mllVy9",
+          "checksum": "8ed99643f59e4b2d2947397df9327246"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "3iJDl4ivTUAA",
+          "checksum": "e91fad9206a22f030e45679495ee1cef"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "3iJDl4ivTUAA",
+          "checksum": "e91fad9206a22f030e45679495ee1cef"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "0RXpCpGOOAec",
+          "checksum": "7fc91316b844d41cc1fb935a4f100ad9"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "0RXpCpGOOAec",
+          "checksum": "7fc91316b844d41cc1fb935a4f100ad9"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "_2Xum1BZtJR4",
+          "checksum": "70018d9363a89da2991468fab75a0d61"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "_2Xum1BZtJR4",
+          "checksum": "70018d9363a89da2991468fab75a0d61"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "SwkFEueqEZ5",
+          "checksum": "a239d1f7a58961e1d63de01252bdd39d"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "SwkFEueqEZ5",
+          "checksum": "a239d1f7a58961e1d63de01252bdd39d"
+        },
+        {
+          "type": "icon",
+          "assetId": "14bXXZYT-it",
+          "checksum": "edfacec09d43e09165a2767df6ffd038"
+        },
+        {
+          "type": "icon",
+          "assetId": "TkrW8X0T1WG",
+          "checksum": "aaeacec6e02cdb1d9aad315bc816ebf6"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "oWqYNAhSlk",
+          "checksum": "8db0634683f45420f7d56212f82698b6"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "oWqYNAhSlk",
+          "checksum": "8db0634683f45420f7d56212f82698b6"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "RXlRRbGyjc5",
+          "checksum": "157268d051011fe778c7b9567694a640"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "RXlRRbGyjc5",
+          "checksum": "157268d051011fe778c7b9567694a640"
+        },
+        {
+          "type": "icon",
+          "assetId": "CwzDQHwdyWv",
+          "checksum": "89ed61baf0b7fec6846879d1fce9bdac"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "9rfm_ZacEO",
+          "checksum": "0844ea7018304cdcdb181db313d29a61"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "9rfm_ZacEO",
+          "checksum": "0844ea7018304cdcdb181db313d29a61"
+        },
+        {
+          "type": "image",
+          "assetId": "lMeKblmuJ7w",
+          "checksum": "6c9b10bbc07769b09e28798473d601ba"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "MINeB5eUWi",
+          "checksum": "a472e83ab8837aeb641f78abaf8dd8d3"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "MINeB5eUWi",
+          "checksum": "a472e83ab8837aeb641f78abaf8dd8d3"
+        },
+        {
+          "assetId": "9An8zqKqHunPYYo4cu2raH",
+          "type": "projectCss",
+          "checksum": "771cd666b4cd8cfd01553eef9ac8237e"
+        }
+      ],
+      "codegenVersion": "0.0.1"
+    }
+  ],
+  "cliVersion": "0.1.222"
+}
