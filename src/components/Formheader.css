@@ -1,0 +1,38 @@
+.form_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 15px;
+    background-color: rgb(239, 247, 255);
+
+}
+
+.form_header_left{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form_name{
+    border: none;
+    outline: none;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-left: 15px;
+    color:black;
+    width: 250px;
+}
+
+.form_name:focus{
+    border-bottom: 1px solid black;
+
+}
+
+.form_header_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+

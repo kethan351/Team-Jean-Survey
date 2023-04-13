@@ -3,13 +3,30 @@ import './App.css';
 import Header from './components/Header';
 import Template from './components/Template';
 import Mainbody from './components/Mainbody';
+import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import Formheader from './components/Formheader';
+import CenterTabs from './components/CenterTabs';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Template />
-      <Mainbody />
+      <Router>
+        <Switch>
+          <Route path="/form/:id">
+            <Formheader />
+            <CenterTabs />
+          </Route>
+          <Route path="/form">
+            <Redirect to="/"/>
+          </Route>
+          <Route path="/">
+            <Header />
+            <Template />
+            <Mainbody />
+          </Route>
+        </Switch>
+      </Router>
+      
     </div>
   )
 }
