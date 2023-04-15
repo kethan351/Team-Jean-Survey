@@ -18,7 +18,6 @@ app.use(function(req, res, next) {
     next();
 });
 
-//app.listen(9000, ()=>{console.log('express server is running at port number 9000')})
 
 app.post(`/add_questions/:doc_id`, (req,res)=>{
     var docs_data = req.body;
@@ -38,6 +37,19 @@ app.get("data/:doc_id", (req,res)=>{
     });
 })
 
+const path = require('path');
+
+app.get("/get_all_filenames", (req,res)=>{
+    const directoryPath = path.join(__dirname, '/files');
+    fs.readdir(directoryPath, function (err, files){
+        if (err){
+            return console.log('unable to scan directory: ' + err);
+        }
+        res.send(files);
+    });
+});
 
 
 
+
+app.listen(9000, ()=>{console.log('express server is running at port number 9000')})
