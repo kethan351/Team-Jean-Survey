@@ -1,4 +1,4 @@
-import React from 'react';
+import Reac, {useState} from 'react';
 import StorageIcon from '@material-ui/icons/Storage';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import FolderOpenIcon from '@material-ui/icons/FolderOpen';
@@ -6,6 +6,11 @@ import {IconButton} from '@material-ui/core';
 import "./Mainbody.css";
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import FormButton from "../images/Form-Button.png";
+//import doc_image from "../images/t-shirt.png" //this is in one of the videos but I don't think its relevent
+
+import "./Mainbody.css"
+import axios from "axios";
+import {useHistory} from "react-router-dom";
 
 /**
  * This function creates the main body section of the home page
@@ -13,6 +18,21 @@ import FormButton from "../images/Form-Button.png";
  * @returns Mainbody component
  */
 function Mainbody(){
+    const history = useHistory();
+
+    function navigate_to(docname){
+        var fname = docname.split(".");
+        history.push("/form/" + fname[0])
+    }
+
+    const [files,setFiles]=useState([]);
+    async function filenames(){
+        var request = await axios.get("https://localhost:9000/get_all_filenames")
+        let filenames = request.data;
+        setFiles(filenames)
+    }
+    filenames()
+
     return(
         <div className="mainbody">
             <div className="mainbody_top">
@@ -27,12 +47,16 @@ function Mainbody(){
                     <IconButton>
                         <FolderOpenIcon style={{fontSize:"16px", color:"black"}} />
                     </IconButton>
-                
+
                 </div>
-                
+
             </div>
             <div className="mainbody_docs">
-                <div className="doc_card">
+            {
+                files.map((ele)=>( //made changes here - Ethan 13/14
+                    <div className="doc_card" onClick={()=>{
+                        navigate_to(ele)
+                    }}>
                     <img src={FormButton} className="doc_image" alt="form icon"/>
                     <div className="doc_card_content">
                         <h5>Sample Survey</h5>
@@ -44,13 +68,12 @@ function Mainbody(){
 
                         </div>
                     </div>
-
-
                 </div>
-
+                ))
+            }
 
             </div>
-            
+
         </div>
     )
 }
