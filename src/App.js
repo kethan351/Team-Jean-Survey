@@ -6,6 +6,7 @@ import Mainbody from './components/Mainbody';
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import Formheader from './components/Formheader';
 import CenterTabs from './components/CenterTabs';
+import Question_form from './components/Question_form';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/form/:id">
             <Formheader />
             <CenterTabs />
+            <Question_form></Question_form>
           </Route>
           <Route path="/form">
             <Redirect to="/"/>
