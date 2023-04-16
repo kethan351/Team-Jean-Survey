@@ -1,0 +1,117 @@
+.question_form {
+    background-color:  rgb(239, 247, 255);
+    height: 100%;
+    padding-bottom: 30px;
+
+}
+
+.section {
+    margin: auto;
+    width: 50%;
+}
+
+.question_form_top {
+    background-color: white;
+    border-top: 8px solid skyblue;
+    border-radius: 8px;
+    padding: 30 px;
+    text-transform: captialize;
+
+}
+
+.question_form_top_name {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    width: 100%;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    border: none;
+    height: 35px;
+    line-height: 40px;
+    line-height: 135%;
+    color:black;
+    outline:none;
+}
+
+.question_form_top_desc {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    border-bottom: 1px solid white;
+    border: none;
+    height: 20px;
+}
+
+.add_question {
+    border-radius: 8px;
+    padding: 25px 22px;
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.question_boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.add_question_top {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.question{
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    flex:1;
+    line-height: 40px;
+    width:40%;
+    border:none;
+    outline: none;
+    color:black;
+    height:40px;
+    margin-right: 10px;
+    line-height: 10px;
+    padding:10px;
+}
+.select{
+    height:40px;
+    width:230%;
+    border:0.5px solid;
+    padding:5px 15px;
+    color:black;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1.5px solid white;
+    border-radius: 3px;
+    background: transparent;
+}
+.menuitem{
+    color:gray;
+}
+.add_question_body{
+    display:flex;
+    align-items: center;
+}
+
+.text_input{
+    outline:none;
+    border:none;
+    height: 40px;
+    width: 490px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    color:black;
+}
