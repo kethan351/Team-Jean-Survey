@@ -18,17 +18,21 @@ import "./Question_form.js";
 import "./Question_form.css";
 import {DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import DragIndicatorIcon from "@material-ui/icons/DragIndicator";
-
+import Button from '@material-ui/core/Button';
+import { FcRightUp } from 'react-icons/fc';
+import FilterNoneIcon from '@material-ui/icons/FilterNone'
+import {BsTrash} from 'react-icons/bs';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+import AddCircleOutlineIcon  from '@material-ui/icons/AddCircleOutline';
+import OndemandVideoIcon from '@material-ui/icons/OndemandVideo';
+import TextFieldsIcon  from '@material-ui/icons/TextFields';
 function Question_form() {
     const [questions, setQuestions] = useState(
         [{
-            questionText: "Question 1?",
+            questionText: "Question",
             questionType: "radio",
             options: [
-                { optionText: "Option1" },
-                { optionText: "Option2" },
-                { optionText: "Option3" },
-                { optionText: "Option4" }
+                { optionText: "Option 1" },
             ],
             open: true,
             required: false
@@ -229,7 +233,7 @@ function Question_form() {
                                                         <IconButton aria-label="delete" onClick={()=>{deleteQuestion(i)}}>
                                                             <BsTrash />
                                                         </IconButton>
-                                                            <span style={{color:"#5f6368", fontSize:"13px"}}>Required </span> <Switch name="checkedA" color="primary" onClick={()=>{requiredQuestion(i)}} checked={checked} />
+                                                            <span style={{color:"#5f6368", fontSize:"13px"}}>Required </span> <Switch name="checkedA" color="primary" onClick={()=>{requiredQuestion(i)}} />
                                                         <IconButton>
                                                             <MoreVertIcon />
                                                         </IconButton>
