@@ -115,3 +115,30 @@
     letter-spacing: .2px;
     color:black;
 }
+
+.question_edit{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 1px;
+    border-radius: 3px;
+    height: 180px;
+    width: 35px;
+}
+
+.edit{
+    color: #5f6368;
+    padding: 8px 5px;
+}
+
+.question:focus{
+    border-bottom: 1px solid #b42424;
+    background-color: #F4F4F9;
+}
+
+.text_input:focus{
+    border-bottom: 1.5px solid #b42424;
+}
