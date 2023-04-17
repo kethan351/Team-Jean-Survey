@@ -1,7 +1,7 @@
 
 .user_form{
     
-    background-color:#F4F4F9;
+    background-color:  rgb(239, 247, 255);
     height:100%;
     padding:20px;
 }
@@ -20,7 +20,7 @@
 
 .user_title_section{
     background-color: white;
-    border-top:8px solid rgb(103, 58, 183);
+    border-top:8px solid lightblue;
     border-radius: 8px;
     padding:15px 25px;
     text-transform: capitalize;

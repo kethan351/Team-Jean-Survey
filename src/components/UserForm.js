@@ -165,7 +165,7 @@ function submit(){
             </div>
        
             <div className="user_footer">
-                Google Forms
+                Jean Survey
             </div>
             </div>
             
