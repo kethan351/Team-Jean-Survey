@@ -19,6 +19,7 @@ function Formheader(){
     
     function navigates(){
         history.push("/response");
+        window.location.reload(false);
     }
 
     return(

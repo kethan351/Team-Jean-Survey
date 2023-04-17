@@ -305,8 +305,8 @@ return (
             <div className="section">
                 <div className="question_title_section">
                     <div className="question_form_top">
-                        <input type="text" className="question_form_top_name" style={{ color: "black" }} placeholder="Untitled document"></input>
-                        <input type="text" className="question_form_top_desc" style={{ color: "black" }} placeholder="Form description"></input>
+                        <input type="text" className="question_form_top_name" style={{ color: "black" }} placeholder="Untitled document" onChange = {(e) => {setDocName(e.target.value)}}></input>
+                        <input type="text" className="question_form_top_desc" style={{ color: "black" }} placeholder="Form description" onChange = {(e) => {setDocDesc(e.target.value)}}></input>
                     </div>
                 </div>
 
@@ -321,6 +321,9 @@ return (
                         )}
                     </Droppable>
                 </DragDropContext>
+                <div className = "save_form">
+                    <Button variant="contained" color="primary" onClick={commitToDB} style={{fontSize: "14px"}}>Save</Button>
+                </div>
 
             </div>
         </div>
