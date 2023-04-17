@@ -18,13 +18,59 @@ app.use(function(req, res, next) {
     next();
 });
 
+const Excel = require('exceljs');
 
 app.post(`/add_questions/:doc_id`, (req,res)=>{
     var docs_data = req.body;
     var name = req.params.doc_id
-    console.log(docs_data)
-    let data = JSON.stringify(docs_data);
-    fs.writeFileSync(`files/${name}.json`, data);
+   // console.log(docs_data)
+    
+    var d = new Date();
+    let workbook = new Excel.Workbook();
+    var data = req.body.answer_data;
+    let worksheet = workbook.addWorksheet(`${name}`);
+
+  //  let data = JSON.stringify(docs_data);
+    //fs.writeFileSync(`files/${name}.json`, data);
+
+   worksheet.getRow(1).font = {bold:true}
+   data.forEach((e,index)=>
+   {
+    const rowIndex =index+2;
+    worksheet.addRow({
+        d, ...e
+    })
+   })
+   workbook.xlsx.writeFile(`${name}.xlsx`)
+   
+})
+
+app.post(`/student_response/:doc_id`, (req,res)=>{
+    var docs_data = req.body;
+    var name = req.params.doc_id
+    //console.log(docs_data)
+   // var d = new Date();
+   
+
+    //let data = JSON.stringify(docs_data);
+   // fs.writeFileSync(`files/${name}.json`, data);
+
+   let workbook = new Excel.Workbook();
+   var data = req.body.answer_data;
+   let worksheet = workbook.addWorksheet(`${name}`);
+worksheet.columns =[{header:"Time Stamp", key:"datetime"},...docs_data.column]
+worksheet.columns.forEach(column =>{
+    column.width = column.header.length< 12 ? 12:column.header.length
+})
+   worksheet.getRow(1).font = {bold:true}
+   data.forEach((e,index)=>
+   {
+    const rowIndex =index+2;
+    worksheet.addRow({
+        d, ...e
+    })
+   })
+   workbook.xlsx.writeFile(`${name}.xlsx`)
 })
 
 app.get("data/:doc_id", (req,res)=>{

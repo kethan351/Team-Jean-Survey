@@ -5,6 +5,8 @@ import form_image from "../images/Form-Button_25.png";
 import {IconButton} from "@material-ui/core";
 import Avatar from "@material-ui/core/Avatar";
 import avatarimage from "../images/avatar.png";
+import {useStateValue} from './StateProvider';
+import {useHistory} from 'react-router-dom';
 
 /**
  * This function creates the header for the survey
@@ -12,17 +14,24 @@ import avatarimage from "../images/avatar.png";
  * @returns Formheader component
  */
 function Formheader(){
+    const history = useHistory();
+    const[{doc_name}, dispatch] = useStateValue();
+    
+    function navigates(){
+        history.push("/response");
+    }
+
     return(
         <div className="form_header">
             <div className="form_header_left">
                 <img src={form_image} alt="form_logo" style={{height:"45px", width:"40px"}}/>
-                <input type="text" placeholder="Untitled Form" className="form_name"></input>
+                <input type="text" placeholder="Untitled Form" className="form_name" value={doc_name}></input>
             </div>
             <div className="form_header_right">
-                <IconButton>
+                <IconButton onClick ={navigates}>
                     <img src={preview} alt="preview_icon" style={{height:"45px", width:"45px"}}/>
                 </IconButton>
-                <IconButton>
+                <IconButton >
                     <Avatar style={{height:"45px", width:"45px"}} src={avatarimage}/>
                 </IconButton>
             </div>
