@@ -7,7 +7,7 @@ import { useHistory } from 'react-router-dom';
 
 import "./user_form.css"
 import { useStateValue } from './StateProvider';
-
+import Question_form from './Question_form';
 import axios from "axios"
 function Userform() {
     var quest = [];

@@ -202,7 +202,7 @@ function questionsUI() {
                                         {(questions[i].open) ? (
                                             <div className="saved_questions">
 
-                                                <Typography style={{ fontSize: "15px", fontWeight: "400", letterSpacing: ".1px", lineHeight: '24px', paddingBottom: '8px' }}>{i + 1}, {questions[i].questionText}</Typography>
+                                                <Typography style={{ fontSize: "15px", fontWeight: "400", letterSpacing: ".2px", lineHeight: '20px', paddingBottom: '8px' }}>{i + 1}, {questions[i].questionText}</Typography>
 
                                                 {ques.options.map((op, j) => (
                                                     <div key={j}>
@@ -222,7 +222,7 @@ function questionsUI() {
                                             <AccordionDetails className="add_question">
                                                 <div className="add_question_top">
                                                     <input type="text" className="question" placeholder="Question" value={ques.questionText} onChange={(e) => (changeQuestion(e.target.value, i))}></input>
-                                                    <CropOriginalIcon style={{ color: "#5f6368" }} />
+                                                  
                                                     <Select className='select' style={{ color: "#5f6368", fontSize: '13px' }}>
                                                         <MenuItem id="text" value="Text" onclick={() => { addQuestionType(i, "text") }}> <SubjectIcon style={{ marginRight: "10px", color: "#70757a" }} /> Paragraph</MenuItem>
                                                         <MenuItem id="checkbox" value="CheckBox" onclick={() => { addQuestionType(i, "checkbox") }}> <CheckBoxIcon style={{ marginRight: "10px", color: "#70757a" }} checked />Check Box</MenuItem>
@@ -238,7 +238,6 @@ function questionsUI() {
                                                         <div>
                                                             <input type="text" className="text_input" placeholder="option" value={ques.options[j].optionText} onChange={(e) => { changeOptionValue(e.target.value, i, j) }}></input>
                                                         </div>
-                                                        <CropOriginalIcon style={{ color: "#5f6368" }} />
                                                         <IconButton aria-label="delete">
                                                             <CloseIcon onClick={() => { removeOption(i, j) }} />
                                                         </IconButton>
@@ -282,9 +281,6 @@ function questionsUI() {
 
                                             <div className="question_edit">
                                                 <AddCircleOutlineIcon onClick={addMoreQuestionField} className="edit" />
-                                                <OndemandVideoIcon className="edit" />
-                                                <CropOriginalIcon className="edit" />
-                                                <TextFieldsIcon className="edit" />
                                             </div>
 
                                         </div>) : " "}

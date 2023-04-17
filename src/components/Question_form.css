@@ -14,14 +14,16 @@
     background-color: white;
     border-top: 8px solid skyblue;
     border-radius: 8px;
-    padding: 30 px;
+    padding: 35px 35px;
     text-transform: captialize;
 
 }
 
 .question_form_top_name {
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
     font-size: 32px;
     width: 100%;
     font-weight: 400;
@@ -36,23 +38,29 @@
 
 .question_form_top_desc {
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-size: 15px;
     font-weight: 400;
+    line-height: 40px;
     width: 100%;
-    border-bottom: 1px solid white;
     border: none;
-    height: 20px;
+    outline: none;
+    border-bottom: 1px solid white;
+    height: 50px;
 }
 
 .add_question {
     border-radius: 8px;
     padding: 25px 22px;
+    text-transform: capitalize;
     display: flex;
     flex-direction: column;
+    padding-top: 0px;
     width: 93%;
     margin-left: 10px;
-    text-transform: capitalize;
 }
 .question_boxes {
     display: flex;
@@ -70,7 +78,7 @@
 .question{
     box-sizing: border-box;
     margin-top: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
     font-size: 15px;
     font-weight: 400;
     flex:1;
@@ -81,13 +89,11 @@
     color:black;
     height:40px;
     margin-right: 10px;
-    line-height: 10px;
     padding:10px;
 }
 .select{
     height:40px;
-    width:230%;
-    border:0.5px solid;
+    width:230px;
     padding:5px 15px;
     color:black;
     margin-left: 10px;
@@ -109,7 +115,7 @@
     border:none;
     height: 40px;
     width: 490px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
     font-size: 13px;
     font-weight: 400;
     letter-spacing: .2px;
@@ -135,10 +141,35 @@
 }
 
 .question:focus{
-    border-bottom: 1px solid #b42424;
+    border-bottom: 1px solid #2f2f5c;
     background-color: #F4F4F9;
 }
 
 .text_input:focus{
-    border-bottom: 1.5px solid #b42424;
+    border-bottom: 1.5px solid #2f2f5c;
+}
+
+.add_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_question_bottom{
+    margin-top: 12px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.add_question_bottom_left{
+    margin-top: 12px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.add_border{
+    border-left: 6px solid skyblue;
 }
