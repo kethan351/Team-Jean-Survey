@@ -32,7 +32,7 @@ import {actionTypes} from './reducer';
 import { useParams } from 'react-router';
 
 function Question_form() {
-    const {id} = useParams();
+   // const {id} = useParams();
     const[{}, dispatch] = useStateValue();
     const [documentDescription, setDocDesc] = useState("Add Description");
     const [documentName, setDocName] = useState("Untitled Document");
@@ -51,7 +51,7 @@ function Question_form() {
 
     useEffect(() => {
         async function data_adding() {
-            var request = await axios.get(`https://localhost:9000/data/${id}`);
+            var request = await axios.get(`https://localhost:3000/data/`);
             var question_data=request.data.questions;
             console.log(question_data);
             var doc_name = request.data.document_name;
@@ -173,7 +173,7 @@ function commitToDB(){
         type:actionTypes.SET_QUESTIONS,
         questions:questions
     })
-    axios.post(`https://localhost:9000/add_questions/${id}`,{
+    axios.post(`https://localhost:3000/response/`,{
         "document_name": documentName,
         "doc_desc": documentDescription,
         "questions": questions,})
