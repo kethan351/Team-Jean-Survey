@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@plasmicapp/react-web": "^0.2.167",
-    "survey-react-ui": "^1.9.77"
-  }
-}
