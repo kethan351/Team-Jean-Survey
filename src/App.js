@@ -8,7 +8,6 @@ import Formheader from './components/Formheader';
 import CenterTabs from './components/CenterTabs';
 import Question_form from './components/Question_form';
 import Userform from './components/UserForm';
-import AxiosTest from './components/AxiosTest';
 import AxiosPost from './components/AxiosPost';
 
 function App() {
