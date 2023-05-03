@@ -28,7 +28,6 @@ function App() {
           </Route>
           <Route path="/test">
             <div>
-         <AxiosTest/>
          <AxiosPost/>
             </div>
           </Route>
