@@ -8,6 +8,8 @@ import Formheader from './components/Formheader';
 import CenterTabs from './components/CenterTabs';
 import Question_form from './components/Question_form';
 import Userform from './components/UserForm';
+import AxiosTest from './components/AxiosTest';
+import AxiosPost from './components/AxiosPost';
 
 function App() {
   return (
@@ -25,6 +27,12 @@ function App() {
           <Route path="/form">
             <Redirect to="/"/>
           </Route>
+          <Route path="/test">
+            <div>
+         <AxiosTest/>
+         <AxiosPost/>
+            </div>
+          </Route>
           <Route path="/">
             <Header />
             <Template />
@@ -32,7 +40,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      
+
     </div>
   )
 }
